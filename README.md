@@ -1,16 +1,17 @@
-# Vue 3 + TypeScript + Vite
+# 天气伴侣
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+天气伴侣是一款基于vue3开发小型的移动端的天气软件。
+## 主要模块
+天气伴侣主要分为四个模块：
+当前定位天气、城市管理、城市天气搜索、未来天气。
+当前定位天气模块主要通过ip定位获取当前城市，显示天气信息。
+城市管理模块能够查看收藏的城市天气，并且对城市进行滑动删除或者批量删除。
+城市天气搜索模块能输入关键字显示相关的城市以及天气。
+未来天气模块显示未来十五天的天气信息并且以折线图的方式显示温度变化。
 
-## Recommended IDE Setup
+## 主要技术
+vue3+ts+pinia+vant+vite
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
-
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
-
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+##运行
+npm init
+npm run dev
